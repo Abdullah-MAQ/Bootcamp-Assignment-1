@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="#" onclick="showSection('task1')">Task 1</a></li>
+            <li><a href="#" onclick="showSection('task2')">Task 2</a></li>
+            <li><a href="#" onclick="showSection('task3')">Task 3</a></li>
+        </ul>
+    </nav>
+
+    <div id="task1" class="task-content">
+        <div class="carousel-container">
+            <button class="carousel-button carousel-button-left" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img class="carousel-item" src="images/aot.jpg" alt="Image 1">
+                    <img class="carousel-item" src="images/deathnote.jpg" alt="Image 2">
+                    <img class="carousel-item" src="images/demonslayer.jpg" alt="Image 3">
+                    <img class="carousel-item" src="images/hunterxhunter.jpg" alt="Image 4">
+                </div>
+            </div>
+            <button class="carousel-button carousel-button-right" onclick="nextSlide()">&#10095;</button>
+            <div class="carousel-info">
+                <div class="info-box" id="info-box1">
+                    <p class="info-title" id="info-text1">Information about Image 1</p>
+                </div>
+                <div class="info-box" id="info-box2">
+                    <p class="info-content" id="info-text2">Additional info about Image 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="task2" class="task-content" style="display: none;">
+        <h2>Data from Azure SQL Database for Task 2</h2>
+        <table id="data-table-task2">
+            <thead>
+                <tr>
+                    <!-- Column headers will be added dynamically -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="task3" class="task-content" style="display: none;">
+        <h2>Data from Azure SQL Database for Task 3</h2>
+        <table id="data-table-task3">
+            <thead>
+                <tr>
+                    <!-- Column headers will be added dynamically -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
